@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Notas Rápidas</title>
+
+    <script type="text/javascript" src="js/miniprojeto.js"></script>
+
+    <link rel="stylesheet" href="css/miniprojeto.css" />
+  </head>
+
+  <body>
+    <h1>Notas Rápidas</h1>
+
+    <div id="container01">
+      <input type="text" id="nota" placeholder="Escreva sua nota aqui" />
+      <!-- Campo para escrever nota -->
+
+      <input type="checkbox" id="urgente" />
+      <!-- checkbox urgente -->
+
+      <label for="urgente" id="urgLabel">Urgente</label>
+
+      <br />
+
+      <input type="checkbox" id="naourgente" /><!-- checkbox não urgente -->
+
+      <label for="naourgente" id="nurgLabel">Não Urgente</label>
+
+      <!-- Botão para adicionar nota -->
+
+      <input
+        type="button"
+        id="btnadicionar"
+        value="adicionar"
+        onclick="adicionar()"
+      />
+    </div>
+    <!----------------------fim container 01-------------------------->
+
+    <br />
+
+    <br />
+
+    <div id="container02">
+      <div id="NU">
+        <!-- NOTAS URGENTES -->
+
+        <div id="txt01">
+          <h2 id="urg">Notas URGENTES</h2>
+        </div>
+
+        <div id="espacoNU">
+          <ul></ul>
+        </div>
+
+        <button onclick="apagarTodas('espacoNU')">Apagar Todas</button>
+        <!--espacoNU é enviado para a funcao apagarTodas como argumento-->
+
+        <!-- botão para apagar todas as notas urgentes -->
+      </div>
+
+      <div id="NNU">
+        <!-- NOTAS NÃO URGENTES -->
+
+        <div id="txt02">
+          <h2 id="nurg">Notas NÃO URGENTES</h2>
+        </div>
+
+        <div id="espacoNNU">
+          <ul></ul>
+        </div>
+
+        <button onclick="apagarTodas('espacoNNU')">Apagar Todas</button>
+
+        <!-- botão para apagar todas as notas não urgentes-->
+      </div>
+    </div>
+    <!----------------------fim container 02--------------------------->
+  </body>
+</html>
