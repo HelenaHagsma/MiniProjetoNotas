@@ -1,0 +1,2 @@
+# MiniProjetoNotas
+Adaptação do ProjetoNotasRápidas
